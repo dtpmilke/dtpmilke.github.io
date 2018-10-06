@@ -608,9 +608,11 @@ section {
     -o-transition: 0.2s;
     transition: 0.2s; }
   .service-card:hover > .service-text {
-    background-color: transparent; }
+    background-color: transparent;
+    text-decoration: none; }
   .service-card:hover > .service-text .text-inner {
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
   .service-card .service-text {
     background-color: #ffffff;
     min-height: 12.8rem;
@@ -621,7 +623,8 @@ section {
     max-height: 12.8rem;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
-    transition: 0.2s; }
+    transition: 0.2s;
+    text-decoration: none; }
     @media (max-width: 575px) {
       .service-card .service-text {
         min-height: auto;
@@ -639,7 +642,8 @@ section {
       width: 98%;
       -webkit-transition: 0.8s;
       -o-transition: 0.8s;
-      transition: 0.8s; }
+      transition: 0.8s;
+      text-decoration: none; }
 
 /*sections*/
 .special-offers {
@@ -697,12 +701,14 @@ section {
     color: #141a4d;
     padding: 2.4rem 3.2rem;
     -webkit-border-radius: 0 0 5px 5px;
-            border-radius: 0 0 5px 5px; }
+            border-radius: 0 0 5px 5px;
+    text-decoration: none; }
     @media (max-width: 575px) {
       .special-offer__card .special-offer__text {
         padding: 2.4rem 0.9rem; } }
   .special-offer__card .special-offer__desk {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    text-decoration: none; }
     @media (max-width: 575px) {
       .special-offer__card .special-offer__desk {
         font-size: 1.4rem;
@@ -712,7 +718,8 @@ section {
     line-height: 2.4rem;
     font-weight: 700;
     margin-bottom: 1.3rem;
-    font-family: 'Gilroy-Bold'; }
+    font-family: 'Gilroy-Bold';
+    text-decoration: none; }
     .special-offer__card .special-offer__title span {
       color: #3ad76e; }
 
@@ -1054,7 +1061,8 @@ section {
     max-height: 80px;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
-    transition: 0.2s; }
+    transition: 0.2s;
+    text-decoration: none; }
     .our-works-card .our-works-text span {
       display: block; }
 
