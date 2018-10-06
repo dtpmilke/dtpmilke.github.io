@@ -1407,6 +1407,7 @@ section {
     .modal-gallery2 .close-gallery2 {
       top: 6rem;
       left: 50%;
+      margin-left:0;
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%); } }
