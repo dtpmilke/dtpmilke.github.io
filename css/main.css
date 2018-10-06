@@ -1406,8 +1406,8 @@ section {
   @media (max-width: 575px) {
     .modal-gallery2 .close-gallery2 {
       top: 6rem;
+      margin: 0;
       left: 50%;
-      margin-left:0;
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%); } }
@@ -1415,6 +1415,7 @@ section {
     .modal-gallery2 .close-gallery2 {
       top: 6rem;
       left: 50%;
+      margin: 0;
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%); } }
@@ -1600,6 +1601,8 @@ section {
   font-size: 1.6rem;
   line-height: 1.6rem;
   color: #525252; }
+  .table-wrapper table td b {
+    white-space: nowrap; }
   @media (max-width: 575px) {
     .table-wrapper table td {
       font-size: 1.1rem;
