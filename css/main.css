@@ -1445,6 +1445,14 @@ section {
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%); } }
+  @media (max-width: 1300px) {
+    .modal-gallery2 .close-gallery2 {
+      top: 6rem;
+      left: 50%;
+      margin: 0;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); } }
 
 .modal-gallery2 .close-gallery2 .line {
   display: block;
