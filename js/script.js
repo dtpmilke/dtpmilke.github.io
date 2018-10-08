@@ -3,7 +3,7 @@ $(function() {
         $(this).toggleClass('active');
         $('.mobile-nav').toggleClass('active');
         $('body').toggleClass('fixed');
-
+        $('html').toggleClass('fixed');
     });
 
     $('input[type="tel"]').mask("+7 (999) 999 99 99");
@@ -119,6 +119,7 @@ $(function() {
 
             $this.find('.our-works-image').on('click', function() {
                 $('body').toggleClass('fixed');
+                $('html').toggleClass('fixed');
                 var thisImage = $(this);
                 var initialSlide = thisImage.attr('data-slide')*1;
 
@@ -198,6 +199,7 @@ $(function() {
             $('#modal_gallery2 .close-gallery2').on('click', function(){
                 $('#modal_gallery2').removeClass('show');
                 $('body').toggleClass('fixed');
+                $('html').toggleClass('fixed');
                 return false;
             });
         });
