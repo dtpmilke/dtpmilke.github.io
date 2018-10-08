@@ -891,15 +891,11 @@ section {
         line-height: 0;
         width: 1.6rem;
         height: 1.6rem;
-        -webkit-border-radius: 7px;
-                border-radius: 7px;
         cursor: pointer;
         color: transparent;
         background-color: transparent;
         border: 0;
-        outline: none;
-        width: 1.6rem;
-        height: 1.6rem;
+       outline: none;
         -webkit-border-radius: 50%;
                 border-radius: 50%;
         border: 2px solid #141a4d; }
@@ -928,10 +924,7 @@ section {
   .review-slider .slick-prev {
     left: 0;
     padding: 2rem 0 2rem 0rem; }
-    .review-slider .slick-prev i {
-      -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg); }
+   
   .review-slider .slick-next {
     right: 0; }
 
