@@ -28,12 +28,14 @@ $(function() {
     $('.feedback-btn').on('click', function() {
         $('.feedback-modal').fadeIn('fast');
         $('body').toggleClass('fixed');
+        $('html').toggleClass('fixed');
         return false;
     });
 
     $('.feedback-modal .exit, button.close').on('click', function() {
         $('.feedback-modal').fadeOut('fast');
         $('body').toggleClass('fixed');
+        $('html').toggleClass('fixed');
         return false;
     });
 
