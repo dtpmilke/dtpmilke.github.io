@@ -899,6 +899,12 @@ section {
         -webkit-border-radius: 50%;
                 border-radius: 50%;
         border: 2px solid #141a4d; }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .review-slider .slick-dots li button{
+    width: 2rem;
+        height: 2rem;
+  }
+ }
   .review-slider .slick-prev,
   .review-slider .slick-next {
     position: absolute;
@@ -1642,3 +1648,5 @@ section {
 
 .table-wrapper table tbody tr:nth-child(even) {
   background: #fff; }
+
+
