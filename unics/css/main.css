@@ -2,14 +2,14 @@
 @font-face {
   font-family: 'Gotham';
   src: url("fonts/GothamPro.eot");
-  src: url("fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("fonts/GothamPro.woff2") format("woff2"), url("fonts/GothamPro.woff") format("woff"), url("/fonts/GothamPro.ttf") format("truetype"), url("/fonts/GothamPro.svg#GothamPro") format("svg");
+  src: url("fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("fonts/GothamPro.woff2") format("woff2"), url("fonts/GothamPro.woff") format("woff"), url("fonts/GothamPro.ttf") format("truetype"), url("fonts/GothamPro.svg#GothamPro") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Gotham-Bold';
   src: url("fonts/GothamPro-Bold.eot");
-  src: url("fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/GothamPro-Bold.woff2") format("woff2"), url("fonts/GothamPro-Bold.woff") format("woff"), url("/fonts/GothamPro-Bold.ttf") format("truetype"), url("/fonts/GothamPro-Bold.svg#GothamPro-Bold") format("svg");
+  src: url("fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/GothamPro-Bold.woff2") format("woff2"), url("fonts/GothamPro-Bold.woff") format("woff"), url("fonts/GothamPro-Bold.ttf") format("truetype"), url("fonts/GothamPro-Bold.svg#GothamPro-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -163,7 +163,7 @@ header {
     header .nav .logo {
       width: 128px;
       height: 43px;
-      background-image: url("img/logo.png");
+      background-image: url("/unics/img/logo.png");
       background-repeat: no-repeat;
       -webkit-background-size: cover;
               background-size: cover;
@@ -265,7 +265,7 @@ header {
   .main-screen .container {
     z-index: 5; }
   .main-screen .bg-1 {
-    background-image: url("img/backgr1.png");
+    background-image: url("/unics/img/backgr1.png");
     position: absolute;
     right: 0px;
     background-repeat: no-repeat;
@@ -284,7 +284,7 @@ header {
                 background-size: cover;
         background-position: top left; } }
   .main-screen .bg-2 {
-    background-image: url("img/backgr2.png");
+    background-image: url("/unics/img/backgr2.png");
     position: absolute;
     right: 0px;
     background-repeat: no-repeat;
@@ -302,7 +302,7 @@ header {
                 background-size: cover;
         background-position: top left; } }
   .main-screen .hand {
-    background-image: url(img/hand.png);
+    background-image: url(/unics/img/hand.png);
     position: absolute;
     right: 208px;
     background-repeat: no-repeat;
@@ -449,7 +449,7 @@ header {
     color: #1447f4;
     margin-top: 24px; }
   .about .bg-3 {
-    background-image: url("img/backgr3.png");
+    background-image: url("/unics/img/backgr3.png");
     position: absolute;
     left: 0px;
     background-repeat: no-repeat;
@@ -467,7 +467,7 @@ header {
                 background-size: cover;
         background-position: top left; } }
   .about .bg-4 {
-    background-image: url("img/backgr4.png");
+    background-image: url("/unics/img/backgr4.png");
     position: absolute;
     left: 0px;
     background-repeat: no-repeat;
