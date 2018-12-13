@@ -1,16 +1,16 @@
 /* fonts*/
 @font-face {
   font-family: 'Gotham';
-  src: url("/fonts/GothamPro.eot");
-  src: url("/fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamPro.woff2") format("woff2"), url("/fonts/GothamPro.woff") format("woff"), url("/fonts/GothamPro.ttf") format("truetype"), url("/fonts/GothamPro.svg#GothamPro") format("svg");
+  src: url("/unics/fonts/GothamPro.eot");
+  src: url("/unics/fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("/unics/fonts/GothamPro.woff2") format("woff2"), url("/unics/fonts/GothamPro.woff") format("woff"), url("/unics/fonts/GothamPro.ttf") format("truetype"), url("/unics/fonts/GothamPro.svg#GothamPro") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gotham-Bold';
-  src: url("/fonts/GothamPro-Bold.eot");
-  src: url("/fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamPro-Bold.woff2") format("woff2"), url("/fonts/GothamPro-Bold.woff") format("woff"), url("/fonts/GothamPro-Bold.ttf") format("truetype"), url("/fonts/GothamPro-Bold.svg#GothamPro-Bold") format("svg");
+  src: url("/unics/fonts/GothamPro-Bold.eot");
+  src: url("/unics/fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("/unics/fonts/GothamPro-Bold.woff2") format("woff2"), url("/unics/fonts/GothamPro-Bold.woff") format("woff"), url("/unics/fonts/GothamPro-Bold.ttf") format("truetype"), url("/unics/fonts/GothamPro-Bold.svg#GothamPro-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
 }
@@ -239,7 +239,7 @@ header .nav {
 header .nav .logo {
   width: 128px;
   height: 43px;
-  background-image: url("/img/logo.png");
+  background-image: url("/unics/img/logo.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -379,7 +379,7 @@ header .nav .lang-switcher .divider {
 }
 
 .main-screen .bg-1 {
-  background-image: url("/img/backgr1.png");
+  background-image: url("/unics/img/backgr1.png");
   position: absolute;
   right: 0px;
   background-repeat: no-repeat;
@@ -413,7 +413,7 @@ header .nav .lang-switcher .divider {
 }
 
 .main-screen .bg-2 {
-  background-image: url("/img/backgr2.png");
+  background-image: url("/unics/img/backgr2.png");
   position: absolute;
   right: 0px;
   background-repeat: no-repeat;
@@ -446,7 +446,7 @@ header .nav .lang-switcher .divider {
 }
 
 .main-screen .hand {
-  background-image: url(/img/hand.png);
+  background-image: url(/unics/img/hand.png);
   position: absolute;
   right: 208px;
   background-repeat: no-repeat;
@@ -680,7 +680,7 @@ header .nav .lang-switcher .divider {
 }
 
 .about .bg-3 {
-  background-image: url("/img/backgr3.png");
+  background-image: url("/unics/img/backgr3.png");
   position: absolute;
   left: 0px;
   background-repeat: no-repeat;
@@ -714,7 +714,7 @@ header .nav .lang-switcher .divider {
 }
 
 .about .bg-4 {
-  background-image: url("/img/backgr4.png");
+  background-image: url("/unics/img/backgr4.png");
   position: absolute;
   left: 0px;
   background-repeat: no-repeat;
@@ -817,7 +817,7 @@ header .nav .lang-switcher .divider {
 }
 
 .how-it-works .bg-5 {
-  background-image: url("/img/backgr5.png");
+  background-image: url("/unics/img/backgr5.png");
   position: absolute;
   right: 0px;
   background-repeat: no-repeat;
@@ -840,7 +840,7 @@ header .nav .lang-switcher .divider {
 }
 
 .how-it-works .illustr-1 {
-  background-image: url("/img/illustr1.png");
+  background-image: url("/unics/img/illustr1.png");
   position: absolute;
   right: 101px;
   background-repeat: no-repeat;
@@ -860,7 +860,7 @@ header .nav .lang-switcher .divider {
 }
 
 .how-it-works .illustr-2 {
-  background-image: url("/img/illustr2.png");
+  background-image: url("/unics/img/illustr2.png");
   position: absolute;
   right: 400px;
   background-repeat: no-repeat;
@@ -912,27 +912,27 @@ header .nav .lang-switcher .divider {
 }
 
 .advantages .item .icon.money {
-  background-image: url("/img/money.svg");
+  background-image: url("/unics/img/money.svg");
 }
 
 .advantages .item .icon.network {
-  background-image: url("/img/network.svg");
+  background-image: url("/unics/img/network.svg");
 }
 
 .advantages .item .icon.partner {
-  background-image: url("/img/partner.svg");
+  background-image: url("/unics/img/partner.svg");
 }
 
 .advantages .item .icon.refprogram {
-  background-image: url("/img/refprogram.svg");
+  background-image: url("/unics/img/refprogram.svg");
 }
 
 .advantages .item .icon.token {
-  background-image: url("/img/token.svg");
+  background-image: url("/unics/img/token.svg");
 }
 
 .advantages .item .icon.home {
-  background-image: url("/img/home.svg");
+  background-image: url("/unics/img/home.svg");
 }
 
 .partners {
@@ -942,7 +942,7 @@ header .nav .lang-switcher .divider {
 }
 
 .partners .bg-6 {
-  background-image: url("/img/backgr6.png");
+  background-image: url("/unics/img/backgr6.png");
   position: absolute;
   left: 0px;
   background-repeat: no-repeat;
@@ -962,7 +962,7 @@ header .nav .lang-switcher .divider {
 }
 
 .partners .bg-7 {
-  background-image: url("/img/backgr7.png");
+  background-image: url("/unics/img/backgr7.png");
   position: absolute;
   left: 0px;
   background-repeat: no-repeat;
@@ -1065,11 +1065,11 @@ header .nav .lang-switcher .divider {
 }
 
 .partners .slider .slider-buttons .icon.prev {
-  background-image: url("/img/arrow-left.svg");
+  background-image: url("/unics/img/arrow-left.svg");
 }
 
 .partners .slider .slider-buttons .icon.next {
-  background-image: url("/img/arrow-right.svg");
+  background-image: url("/unics/img/arrow-right.svg");
 }
 
 .partners .slider .slider-buttons.slider-buttons-prev {
