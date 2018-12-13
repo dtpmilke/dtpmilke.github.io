@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="83px" height="83px" viewBox="0 0 83 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>home</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="концепции" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Unics-Desktop-HD" transform="translate(-464.000000, -2920.000000)">
+            <g id="home" transform="translate(464.000000, 2920.000000)">
+                <rect id="Rectangle-3" fill="#2052F5" fill-rule="nonzero" opacity="0.261551339" x="0" y="16" width="67" height="67"></rect>
+                <rect id="Rectangle-3" fill="#2052F5" fill-rule="nonzero" opacity="0.261551339" x="16" y="0" width="67" height="67"></rect>
+                <g transform="translate(28.000000, 31.000000)" stroke="#041F76" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.45599934">
+                    <polygon id="Rectangle-6" points="3.375 0 23.625 0 27 6.76923077 0 6.76923077"></polygon>
+                    <rect id="Rectangle" x="3.375" y="6.76923077" width="20.25" height="15.2307692"></rect>
+                    <rect id="Rectangle-2" x="10.125" y="13.5384615" width="6.75" height="8.46153846"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

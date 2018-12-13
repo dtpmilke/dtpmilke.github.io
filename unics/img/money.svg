@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="83px" height="83px" viewBox="0 0 83 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>money</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="концепции" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Unics-Desktop-HD" transform="translate(-919.000000, -2920.000000)">
+            <g id="money" transform="translate(919.000000, 2920.000000)">
+                <rect id="Rectangle-3" fill="#2052F5" fill-rule="nonzero" opacity="0.261551339" x="0" y="16" width="67" height="67"></rect>
+                <rect id="Rectangle-3" fill="#2052F5" fill-rule="nonzero" opacity="0.261551339" x="16" y="0" width="67" height="67"></rect>
+                <path d="M37.8,42 C37.8,40.1583333 39.232,38.6666667 41,38.6666667 C42.768,38.6666667 44.2,40.1583333 44.2,42 C44.2,43.8416667 42.768,45.3333333 41,45.3333333 C39.232,45.3333333 37.8,43.8416667 37.8,42 M52.2,48.6666667 L29.8,48.6666667 C28.9168,48.6666667 28.2,47.92 28.2,47 L28.2,37 C28.2,36.08 28.9168,35.3333333 29.8,35.3333333 L52.2,35.3333333 C53.0832,35.3333333 53.8,36.08 53.8,37 L53.8,47 C53.8,47.92 53.0832,48.6666667 52.2,48.6666667 M25,35.3333333 L25,48.6666667 C25,50.5083333 26.432,52 28.2,52 L53.8,52 C55.568,52 57,50.5083333 57,48.6666667 L57,35.3333333 C57,33.4916667 55.568,32 53.8,32 L28.2,32 C26.432,32 25,33.4916667 25,35.3333333" id="money_round-[#1180]" fill="#041F76"></path>
+            </g>
+        </g>
+    </g>
+</svg>

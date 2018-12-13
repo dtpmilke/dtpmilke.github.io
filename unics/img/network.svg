@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="83px" height="83px" viewBox="0 0 83 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>network</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="концепции" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Unics-Desktop-HD" transform="translate(-919.000000, -3152.000000)">
+            <g id="network" transform="translate(919.000000, 3152.000000)">
+                <rect id="Rectangle-3" fill="#2052F5" fill-rule="nonzero" opacity="0.261551339" x="0" y="16" width="67" height="67"></rect>
+                <rect id="Rectangle-3" fill="#2052F5" fill-rule="nonzero" opacity="0.261551339" x="16" y="0" width="67" height="67"></rect>
+                <path d="M38.4,33.2222222 L44.6,33.2222222 L44.6,27 L38.4,27 L38.4,33.2222222 Z M50.8,55 L57,55 L57,48.7777778 L50.8,48.7777778 L50.8,55 Z M26,55 L32.2,55 L32.2,48.7777778 L26,48.7777778 L26,55 Z M30.65,45.6666667 L27.55,45.6666667 L27.55,39.4444444 L39.95,39.4444444 L39.95,36.3333333 L43.05,36.3333333 L43.05,39.4444444 L55.45,39.4444444 L55.45,45.6666667 L52.35,45.6666667 L52.35,42.5555556 L30.65,42.5555556 L30.65,45.6666667 Z" id="network_2-[#1118]" fill="#041F76"></path>
+            </g>
+        </g>
+    </g>
+</svg>
