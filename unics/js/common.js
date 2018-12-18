@@ -1,5 +1,5 @@
 $(function() {
-	contentEffect()
+    contentEffect()
     //Функция переключения меню
     // показ/скрытие меню
     function openMenu() {
@@ -99,10 +99,22 @@ $(function() {
     }
     //Слайдер дорожной карты
     if ($('#roadmap_slider').length) {
+        $(window).on('resize', function() {
+            if ($(window).width() <= 575) {
+                console.log(1);
+                $('#roadmap_slider').removeClass('swiper-container-horizontal').addClass('swiper-container-vertical');
+            } else {
+                $('#roadmap_slider').removeClass('swiper-container-vertical').addClass('swiper-container-horizontal');
+            }
+        });
+
+
         var roadMapSlider = new Swiper('#roadmap_slider', {
             loop: false,
             slidesPerView: 4,
             spaceBetween: 25,
+            observer: true,
+            direction: 'horizontal',
             freeMode: false,
             grabCursor: false,
             allowTouchMove: false,
@@ -114,6 +126,7 @@ $(function() {
                 1024: {
                     slidesPerView: 3,
                     spaceBetween: 16,
+
                 },
                 575: {
                     direction: 'vertical',
@@ -122,7 +135,11 @@ $(function() {
                 }
 
             },
-        })
+
+
+        });
+
+
     }
     //Форма в футере
     if ($('#footer_form_2').length) {
@@ -269,6 +286,18 @@ $(function() {
     }
 
 
+    var margin = 120; // переменная для контроля докрутки
+    $(".item[href^='#']").click(function() { // тут пишите условия, для всех ссылок или для конкретных
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top - margin + "px" // .top+margin - ставьте минус, если хотите увеличить отступ
+        }, {
+            duration: 1600, // тут можно контролировать скорость
+            easing: "swing"
+        });
 
+        if ($(window).width() <= 575) { closeMenu(); }
+
+        return false;
+    });
 
 });

@@ -217,6 +217,7 @@ ol {
     font-size: 20px;
     padding: 10px 0;
     color: #1447f4;
+    text-decoration: none;
   }
   .open-menu .menu-mobile .button.main.lk {
     display: inline-block;
@@ -884,7 +885,7 @@ header .menu-button .line.l3 {
 }
 
 .main-screen .hand {
-  background-image: url(../img/hand.png);
+  background-image: url("./img/hand.png");
   position: absolute;
   right: 208px;
   background-repeat: no-repeat;
@@ -1671,7 +1672,7 @@ header .menu-button .line.l3 {
 
 @media (max-width: 999px) {
   .advantages .item .name {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
   }
 }
@@ -2003,6 +2004,7 @@ header .menu-button .line.l3 {
   margin-top: 50px;
   overflow: hidden;
   position: relative;
+  height: 212px;
 }
 
 @media (max-width: 999px) {
@@ -2632,7 +2634,7 @@ footer .send-email .send-mail {
 footer .logo {
   width: 128px;
   height: 43px;
-  background-image: url("../img/logo.svg");
+  background-image: url("./img/logo.svg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
