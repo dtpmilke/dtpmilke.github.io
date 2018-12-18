@@ -14,12 +14,25 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
+    <div class="menu-mobile">
+        <a class="item">White paper</a>
+        <a class="item">Партнеры</a>
+        <a class="item">Roadmap</a>
+        <a class="item">Команда</a>
+        <a class="item">Контакты</a>
+        <a class="button main lk">Личный кабинет</a>
+        <div class="lang-switcher">
+            <div class="item">RU</div>
+            <div class="divider">|</div>
+            <div class="item">EN</div>
+        </div>
+    </div>
     <header id="header">
         <div class="container">
             <div class="nav">
@@ -31,194 +44,228 @@
                     <div class="item">Команда</div>
                     <div class="item">Контакты</div>
                 </div>
-                <a class="button main">Личный кабинет</a>
+                <a class="button main lk">Личный кабинет</a>
                 <div class="lang-switcher">
                     <div class="item">RU</div>
                     <div class="divider">|</div>
                     <div class="item">EN</div>
                 </div>
             </div>
+            <a id="menu_button" class="menu-button">
+                    <span class="ico">
+                        <i class="line l1"></i>
+                        <i class="line l2"></i>
+                        <i class="line l3"></i>
+                    </span>
+                </a>
         </div>
     </header>
     <div class="header-margin"></div>
     <main>
-        <section class="main-screen fullscreen">
+        <section class="main-screen contentEffect">
             <div class="container">
                 <div class="row">
                     <div class="col w50">
-                        <h1 class="h1">Начни свой международный бизнес</h1>
-                        <div class="description">Unics - платформа объединенных криптосервисов.</div>
+                        <h1 class="h1 effectFadeTop delay-02s">Начни свой международный бизнес</h1>
+                        <div class="description effectFadeTop delay-025s">Unics - платформа объединенных криптосервисов.</div>
                         <div class="buttons">
-                            <div class="button main">
+                            <div class="button main video effectFadeTop delay-03s" data-youtube="lFemw0CJg2k">
                                 Видео <i class="play"></i>
                             </div>
-                            <div class="button main">White paper</div>
+                            <div class="button main effectFadeTop delay-035s">White paper</div>
                         </div>
                     </div>
                     <div class="col w50">
                         <div class="wrapper">
                             <div id="clock"></div>
                             <div class="fee">
-                                <div class="text">Собрано:</div>
-                                <div class="line">
-                                    <div class="target"></div>
+                                <div class="text effectFadeTop delay-04s">Собрано:</div>
+                                <div class="line effectFadeTop delay-045s">
+                                    <div class="target effectFadeTop delay-05s"></div>
                                 </div>
-                                <div class="price">120 000 $</div>
+                                <div class="price effectFadeTop">120 000 $</div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="coin c1 effectFade"></div>
+                <div class="coin c2 effectFade"></div>
+                <div class="coin c3 effectFade"></div>
+
+                <div class="coin c4 effectFade"></div>
+                
+
+                <div class="coin c6 effectFade"></div>
+                <div class="coin c7 effectFade"></div>
+
+
             </div>
+			
+			<div class="coin c5 effectFade"></div>
             <div class="bg-1"></div>
             <div class="bg-2"></div>
             <div class="hand"></div>
         </section>
-        <section class="send-email">
+        <section class="send-email contentEffect">
             <div class="container">
                 <div class="form">
-                    <div class="title">Отправь нам свой E-mail и узнавай новости о UNICS самым первым!</div>
-                    <form action="#" class="send-mail">
+                    <div class="title effectFadeTop ">Отправь нам свой E-mail и узнавай новости о UNICS самым первым!</div>
+                    <form class="send-mail" id="email_form_1">
                         <div class="container">
                             <div class="row">
                                 <div class="col w66">
-                                    <div class="field">
-                                        <div class="label">E-mail</div>
-                                        <input type="text" class="input-text">
+                                    <div class="field effectFadeTop delay-035s">
+                                        
+                                        <input class="input-text placeholder validate" name="email" type="text" data-validate="email" data-placeholder="E-mail">
                                     </div>
                                 </div>
                                 <div class="col w33">
-                                    <div class="field">
-                                        <button class="button">Отправить</button>
+                                    <div class="field effectFadeTop delay-045s">
+                                        <button class="button" type="submit" id="email_submit">Отправить</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="success-form">
+                        	Успешно!
+                        </div>
                     </form>
                 </div>
+                <div class="coin c8 effectFade"></div>
+                <div class="coin c9 effectFade"></div>
             </div>
         </section>
-        <section class="about">
+        <section class="about contentEffect">
             <div class="container">
                 <div class="row">
                     <div class="col w50 w50-offset">
-                        <h2 class="h2">О нас</h2>
-                        <div class="description">UNICS - платформа объединенных криптосервисов.</div>
-                        <p>Мы – инновационная быстрорастущая компания UNICS, специализирующаяся на разработках высокотехнологичных продуктов в IT и блокчейн индустрии.</p>
-                        <p>История компании берет свое начало с идеи построения глобальной организации, в недрах которой создаются новые идеи и решения, помогающие простым пользователям по всему миру – удобно пользоваться блокчейн технологиями</p>
+                        <h2 class="h2 effectFadeTop">О нас</h2>
+                        <div class="description effectFadeTop delay-045s">UNICS - платформа объединенных криптосервисов.</div>
+                        <p class="effectFadeTop delay-055s">Мы – инновационная быстрорастущая компания UNICS, специализирующаяся на разработках высокотехнологичных продуктов в IT и блокчейн индустрии.</p>
+                        <p class="effectFadeTop delay-065s">История компании берет свое начало с идеи построения глобальной организации, в недрах которой создаются новые идеи и решения, помогающие простым пользователям по всему миру – удобно пользоваться блокчейн технологиями</p>
                     </div>
                 </div>
+                <div class="coin c10 effectFade"></div>
+                
+                <div class="coin c12 effectFade"></div>
             </div>
+            <div class="coin c11 effectFade"></div>
             <div class="bg-3"></div>
             <div class="bg-4"></div>
         </section>
-        <section class="how-it-works">
+        <section class="how-it-works contentEffect">
             <div class="container">
                 <div class="row">
                     <div class="col w50">
                         <div class="wrapper">
-                            <h2 class="h2">Как работает платформа?</h2>
-                            <p class="description">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.</p>
+                            <h2 class="h2 effectFadeTop">Как работает платформа?</h2>
+                            <p class="description effectFadeTop delay-035s">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.</p>
                             <div class="text">
                                 <div class="item">
-                                    <div class="num">1</div>
-                                    <div class="title">Mauris non tempor quam</div>
-                                    <div class="description">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.</div>
+                                    <div class="num effectFadeTop delay-045s">1</div>
+                                    <div class="title effectFadeTop delay-05s">Mauris non tempor quam</div>
+                                    <div class="description effectFadeTop delay-055s">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.</div>
                                 </div>
                                 <div class="item">
-                                    <div class="num">2</div>
-                                    <div class="title">Mauris non tempor quam</div>
-                                    <div class="description">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.</div>
+                                    <div class="num effectFadeTop delay-06s">2</div>
+                                    <div class="title effectFadeTop delay-065s">Mauris non tempor quam</div>
+                                    <div class="description effectFadeTop delay-07s">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.</div>
                                 </div>
                                 <div class="item">
-                                    <div class="num">3</div>
-                                    <div class="title">Mauris non tempor quam</div>
-                                    <div class="description">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.</div>
+                                    <div class="num effectFadeTop effectFadeTop delay-08s">3</div>
+                                    <div class="title effectFadeTop delay-085s">Mauris non tempor quam</div>
+                                    <div class="description effectFadeTop delay-09s">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="coin c13 effectFade"></div>
+                <div class="coin c14 effectFade"></div>
+                <div class="coin c15 effectFade"></div>
             </div>
             <div class="bg-5"></div>
             <div class="illustr-1"></div>
             <div class="illustr-2"></div>
         </section>
-        <section class="advantages">
+        <section class="advantages contentEffect">
             <div class="container">
-                <h2 class="h2">Преимущества</h2>
+                <h2 class="h2 effectFadeTop">Преимущества</h2>
                 <div class="row">
-                    <div class="col w33 w-50-tablet">
+                    <div class="col w33 w-50-tablet effectFadeTop delay-045s">
                         <div class="item">
                             <div class="icon home"></div>
                             <div class="name">Криптовалютные сервисы в одном месте</div>
                         </div>
                     </div>
-                    <div class="col w33 w-50-tablet">
+                    <div class="col w33 w-50-tablet effectFadeTop delay-055s">
                         <div class="item">
                             <div class="icon money"></div>
                             <div class="name">Источники планируемого дохода</div>
                         </div>
                     </div>
-                    <div class="col w33 w-50-tablet">
+                    <div class="col w33 w-50-tablet effectFadeTop delay-065s">
                         <div class="item">
                             <div class="icon partner"></div>
                             <div class="name">Открыты к партнерству</div>
                         </div>
                     </div>
-                    <div class="col w33 w-50-tablet">
+                    <div class="col w33 w-50-tablet effectFadeTop delay-075s">
                         <div class="item">
                             <div class="icon token"></div>
                             <div class="name">Токен</div>
                         </div>
                     </div>
-                    <div class="col w33 w-50-tablet">
+                    <div class="col w33 w-50-tablet effectFadeTop delay-085s">
                         <div class="item">
                             <div class="icon network"></div>
                             <div class="name">Франшиза</div>
                         </div>
                     </div>
-                    <div class="col w33 w-50-tablet">
+                    <div class="col w33 w-50-tablet effectFadeTop delay-095s">
                         <div class="item">
                             <div class="icon refprogram"></div>
                             <div class="name">Реферальная программа</div>
                         </div>
                     </div>
                 </div>
+                <div class="coin c16 effectFade"></div>
+                <div class="coin c17 effectFade"></div>
             </div>
         </section>
-        <section class="partners">
+        <section class="partners contentEffect">
             <div class="container">
-                <h2 class="h2">Партнеры</h2>
-                <div class="slider" id="partner-slider">
+                <h2 class="h2 effectFadeTop">Партнеры</h2>
+                <div class="slider effectFadeTop delay-045s" id="partner-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="item">
-                                <img src="/unics/img/logo.svg" alt="">
+                                <img src="/img/logo.svg" alt="">
                             </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="item">
-                                    <img src="/unics/img/logo.svg" alt="">
+                                    <img src="/img/logo.svg" alt="">
                             </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="item">
-                                        <img src="/unics/img/logo.svg" alt="">
+                                        <img src="/img/logo.svg" alt="">
                             </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="item">
-                                            <img src="/unics/img/logo.svg" alt="">
+                                            <img src="/img/logo.svg" alt="">
                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="item">
-                                                <img src="/unics/img/logo.svg" alt="">
+                                                <img src="/img/logo.svg" alt="">
                             </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="item">
-                                                    <img src="/unics/img/logo.svg" alt="">
+                                                    <img src="/img/logo.svg" alt="">
                             </div>
                                                 </div>
                                             </div>
@@ -229,14 +276,15 @@
                                                 <div class="icon next"></div>
                                             </div>
                                         </div>
+                                        
                                     </div>
                                     <div class="bg-6"></div>
                                     <div class="bg-7"></div>
         </section>
-        <section class="roadmap">
+        <section class="roadmap contentEffect">
             <div class="container">
-                <h2 class="h2">Roadmap</h2>
-                <div class="roadmap-slider" id="roadmap_slider">
+                <h2 class="h2 effectFadeTop">Roadmap</h2>
+                <div class="roadmap-slider effectFadeTop delay-045s" id="roadmap_slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="item">
@@ -291,52 +339,52 @@
             </div>
             <div class="bg-8"></div>
         </section>
-        <section class="team">
+        <section class="team contentEffect">
             <div class="container">
                 <h2 class="h2">Команда</h2>
                 <div class="row">
-                    <div class="col w33">
-                        <div class="item">
+                    <div class="col w33 w-50-tablet">
+                        <div class="item effectFadeTop delay-045s">
                             <div class="photo"><img src="http://vokruglamp.ru/upload/iblock/69a/vokruglamp_laytboks_ptitsy_i_tsvety_25x25_002.jpeg" alt=""></div>
                                 <div class="name">Aaron Murray</div>
                                 <div class="position">Должность</div>
                                 <div class="text">Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper.</div>
                             </div>
                         </div>
-                        <div class="col w33">
-                            <div class="item">
+                        <div class="col w33 w-50-tablet">
+                            <div class="item effectFadeTop delay-055s">
                                 <div class="photo"><img src="http://vokruglamp.ru/upload/iblock/69a/vokruglamp_laytboks_ptitsy_i_tsvety_25x25_002.jpeg" alt=""></div>
                                     <div class="name">Sara Brown</div>
                                     <div class="position">Должность</div>
                                     <div class="text">Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper.</div>
                                 </div>
                             </div>
-                            <div class="col w33">
-                                <div class="item">
+                            <div class="col w33 w-50-tablet">
+                                <div class="item effectFadeTop delay-065s">
                                     <div class="photo"><img src="http://vokruglamp.ru/upload/iblock/69a/vokruglamp_laytboks_ptitsy_i_tsvety_25x25_002.jpeg" alt=""></div>
                                         <div class="name">Bobby Hernandez</div>
                                         <div class="position">Должность</div>
                                         <div class="text">Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper.</div>
                                     </div>
                                 </div>
-                                <div class="col w33">
-                                    <div class="item">
+                                <div class="col w33 w-50-tablet">
+                                    <div class="item effectFadeTop delay-075s">
                                         <div class="photo"><img src="http://vokruglamp.ru/upload/iblock/69a/vokruglamp_laytboks_ptitsy_i_tsvety_25x25_002.jpeg" alt=""></div>
                                             <div class="name">Aaron Murray</div>
                                             <div class="position">Должность</div>
                                             <div class="text">Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper.</div>
                                         </div>
                                     </div>
-                                    <div class="col w33">
-                                        <div class="item">
+                                    <div class="col w33 w-50-tablet">
+                                        <div class="item effectFadeTop delay-085s">
                                             <div class="photo"><img src="http://vokruglamp.ru/upload/iblock/69a/vokruglamp_laytboks_ptitsy_i_tsvety_25x25_002.jpeg" alt=""></div>
                                                 <div class="name">Sara Brown</div>
                                                 <div class="position">Должность</div>
                                                 <div class="text">Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper.</div>
                                             </div>
                                         </div>
-                                        <div class="col w33">
-                                            <div class="item">
+                                        <div class="col w33 w-50-tablet">
+                                            <div class="item effectFadeTop delay-095s">
                                                 <div class="photo"><img src="http://vokruglamp.ru/upload/iblock/69a/vokruglamp_laytboks_ptitsy_i_tsvety_25x25_002.jpeg" alt=""></div>
                                                     <div class="name">Bobby Hernandez</div>
                                                     <div class="position">Должность</div>
@@ -344,19 +392,25 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="coin c19 effectFade"></div>
+                                        <div class="coin c20 effectFade"></div>
+                                        <div class="coin c21 effectFade"></div>
+                                        <div class="coin c22 effectFade"></div>
                                     </div>
         </section>
-        <section class="faq">
+        <section class="faq contentEffect">
             <div class="container">
-                <h2 class="h2">
+                <h2 class="h2 effectFadeTop">
         			FAQ
         		</h2>
             </div>
-            <div class="items">
+            <div class="items effectFadeTop delay-045s">
                 <div class="item closed">
                     <div class="container">
-                        Cras quis nulla commodo, aliquam lectus sed, blandit augue?
-                        <div class="arrow"></div>
+                        <div class="name">Cras quis nulla commodo, aliquam lectus sed, blandit augue?</div>
+                        <div class="arrow">
+                            <div class="icon"></div>
+                        </div>
                         <div class="text">
                             Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius.
                         </div>
@@ -364,8 +418,10 @@
                 </div>
                 <div class="item closed">
                     <div class="container">
-                        Cras quis nulla commodo, aliquam lectus sed, blandit augue?
-                        <div class="arrow"></div>
+                        <div class="name">Cras quis nulla commodo, aliquam lectus sed, blandit augue?</div>
+                        <div class="arrow">
+                            <div class="icon"></div>
+                        </div>
                         <div class="text">
                             Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius.
                         </div>
@@ -373,37 +429,68 @@
                 </div>
                 <div class="item opened">
                     <div class="container">
-                        Cras quis nulla commodo, aliquam lectus sed, blandit augue?
-                        <div class="arrow"></div>
+                        <div class="name">Cras quis nulla commodo, aliquam lectus sed, blandit augue?</div>
+                        <div class="arrow">
+                            <div class="icon"></div>
+                        </div>
                         <div class="text">
                             Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius.
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="coin c23 effectFade"></div>
         </section>
         <div class="footer-indent"></div>
     </main>
     <footer>
+
         <section class="send-email">
+
             <div class="container">
                 <div class="logo"></div>
                 <div class="form">
-                    <form action="#">
-                        <div class="field">
-                            <input type="text">
+                    <form class="send-mail" id="footer_form_2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col w66">
+                                    <div class="field">
+                                        <input class="input-text placeholder validate" name="email" type="text" data-validate="email" data-placeholder="E-mail">
+                                    </div>
+                                </div>
+                                <div class="col w33">
+                                    <div class="field">
+                                        <button class="button" type="submit" id="footer_submit">Отправить</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="field">
-                            <button class="button">Отправить</button>
+                        <div class="success-form">
+                        	Успешно!
                         </div>
                     </form>
                 </div>
+                <div class="socials">
+                    <a class="twitter"></a>
+                    <a class="facebook"></a>
+                    <a class="email">brett.block@gmail.com</a>
+                </div>
+
             </div>
+
         </section>
     </footer>
+    <div id="modal_video" class="modal-video">
+        <div id="modal_video_frame" class="video"></div>
+        <div id="close_video" class="close-video" title="Закрыть видео">
+            <i class="line l1"></i><i class="line l2"></i>
+        </div>
+    </div>
     <script src="js/libs/jquery-3.2.1.min.js"></script>
     <script src="js/libs/jquery.countdown.min.js"></script>
     <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/jquery.viewportchecker.js"></script>
+    <script src="js/libs/form.js"></script>
     <script src="js/common.js"></script>
 </body>
 
