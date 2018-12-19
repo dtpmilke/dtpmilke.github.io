@@ -885,7 +885,7 @@ header .menu-button .line.l3 {
 }
 
 .main-screen .hand {
-  background-image: url("./img/hand.png");
+  background-image: url("../img/hand.png");
   position: absolute;
   right: 208px;
   background-repeat: no-repeat;
