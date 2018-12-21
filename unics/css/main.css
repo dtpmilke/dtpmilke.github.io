@@ -1654,6 +1654,7 @@ header .menu-button .line.l3 {
 
 .advantages .item .popup{
     position: absolute;
+  cursor:pointer;
     top: 64px;
     left: 60px;
     right: 60px;
