@@ -1669,6 +1669,7 @@ header .menu-button .line.l3 {
 
 .advantages .item .popup .text{
   top:50%;
+  position:absolute;
   left:50%;
   transform:translate(-50%,-50%);
 }
