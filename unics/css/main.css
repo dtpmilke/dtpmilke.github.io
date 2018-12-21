@@ -1648,15 +1648,54 @@ header .menu-button .line.l3 {
   padding: 64px 60px 0 60px;
 }
 
+.advantages .item:hover .popup{
+  display:block;
+  transform:scale(1);
+}
+
+.advantages .item .popup{
+    display:none;
+    position: absolute;
+    top: 64px;
+    left: 60px;
+    right: 60px;
+    background-color: #1447f4;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    transition:.2s;
+    transform:scale(0);
+    
+}
+
+.advantages .item .popup .text{
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
 @media (max-width: 999px) {
   .advantages .item {
     padding: 40px 50px 0 50px;
+  }
+  
+  .advantages .item .popup{
+    top: 40px;
+    left: 50px;
+    right: 50px;
   }
 }
 
 @media (max-width: 575px) {
   .advantages .item {
     padding: 30px 65px 0 65px;
+  }
+  
+  .advantages .item .popup{
+    top: 30px;
+    left: 65px;
+    right: 65px;
   }
 }
 
