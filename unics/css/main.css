@@ -1649,12 +1649,10 @@ header .menu-button .line.l3 {
 }
 
 .advantages .item:hover .popup{
-  display:block;
   transform:scale(1);
 }
 
 .advantages .item .popup{
-    display:none;
     position: absolute;
     top: 64px;
     left: 60px;
