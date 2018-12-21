@@ -1668,10 +1668,13 @@ header .menu-button .line.l3 {
 }
 
 .advantages .item .popup .text{
-  top:50%;
-  position:absolute;
-  left:50%;
-  transform:translate(-50%,-50%);
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    padding: 46px 16px;
+    line-height: 2;
 }
 
 @media (max-width: 999px) {
@@ -1683,6 +1686,11 @@ header .menu-button .line.l3 {
     top: 40px;
     left: 50px;
     right: 50px;
+  }
+  .advantages .item .popup .text{ 
+  padding: 5px;
+    font-size: 14px;
+    line-height: 1.5;
   }
 }
 
