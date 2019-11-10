@@ -4157,35 +4157,6 @@ function validateField($field) {
             }
             break;
 
-        //дата рождения
-        case 'date_birthday':
-            if (val.search(regDate) == -1) {
-                error++;
-                message = 'Дата в формате дд.мм.гггг';
-
-            } else {
-                var d = val.split('.');
-                //месяц с 0 поэтому вычитаем
-                var day = d[0] * 1;
-                var month = d[1] * 1 - 1;
-                var year = d[2] * 1;
-
-                var dateCur = moment([year, month, day]);
-                var dateNow = moment();
-
-                //проверка на корректность даты
-                if (dateCur.isValid() == 'Invalid date' || dateCur.isValid() == false || dateCur > dateNow) {
-                    error++;
-                    message = 'Укажите верную дату'
-
-                } else if (dateNow.diff(dateCur, 'years') < 18) {
-                    error++;
-                    message = 'Возраст не менее 18 лет';
-                }
-            }
-
-            break;
-
         //email
         case 'email':
             if (val == '' || val.search(regEmail) == -1 || val.length > 50) {
@@ -4203,60 +4174,6 @@ function validateField($field) {
             }
             break;
 
-        /*русские символы + спец.символы для фио*/
-        case 'rusfield':
-            if (val == '' || val.search(regNameRus) == -1 || val.length > 50 || val.length < 2) {
-                error++;
-                message = 'Только русские буквы, до 50 символов';
-            }
-            break;
-
-        /*№ договора*/
-        case 'number_dogovor':
-            //проверка поля
-            val = getClearVal(val);
-
-            var firstSymbol = val.substr(0, 1);
-            var otherSymbol = val.substr(1, val.length - 1);
-
-            if (val.length == 10 && (firstSymbol == 'S' || firstSymbol.search(regNum) != -1) && otherSymbol.search(regNum) != -1) {
-
-            } else {
-                error++;
-                message = 'Номер договора должен содержать десять цифр, <br>код услуги состоит из буквы S и девяти цифр';
-            }
-
-            break;
-
-        /*№ договора*/
-        case 'number_dogovor_empty':
-            //проверка поля
-            val = getClearVal(val);
-
-            if (val) {
-                var firstSymbol = val.substr(0, 1),
-                    otherSymbol = val.substr(1, val.length - 1);
-
-                if (val.length == 10 && (firstSymbol == 'S' || firstSymbol.search(regNum) != -1) && otherSymbol.search(regNum) != -1) {
-
-                } else {
-                    error++;
-                    message = 'Номер договора должен содержать десять цифр, <br>код услуги состоит из буквы S и девяти цифр';
-                }
-            }
-
-            break;
-
-        //пароль
-        case 'password':
-            val = getClearVal(val);
-            //проверка на латиницу/цифры
-            if (val.search(regPass) == -1 || !val.match(/[0-9]+/) || !val.match(/[A-Z]+/) || val.length < 8) {
-                error++;
-                errorMessage = 'Не менее 8 знаков, минимум 1 заглавная буква и 1 цифра';
-            }
-
-            break;
     }
 
     //если поле заполнено не корректно
@@ -4338,54 +4255,6 @@ function initPlaceholders() {
             });
     });
 
-    $('.placeholder-select').each(function () {
-        if ($(this).hasClass('ready')) return;
-
-        var $this = $(this),
-            $field = $this.parents('.field'),
-            plh = $this.attr('data-placeholder'),
-            val = $.trim($this.val());
-
-        if ((val == '' || val == plh) && plh != '' && plh != undefined) {
-            $field.addClass('empty');
-
-        } else {
-            $field.removeClass('empty');
-        }
-
-        $field.find('.selectwrap').prepend('<span class="label">' + plh + '</span>');
-
-        $this.addClass('ready');
-
-        $this
-            .on('focus', function () {
-                var $this = $(this),
-                    $field = $this.parents('.field');
-                plh = $this.attr('data-placeholder'),
-                    val = $this.val();
-
-                if ($this.prop('readonly')) return false;
-
-                if (val == '' || val == plh) {
-                    $field.removeClass('empty');
-                }
-            })
-            .on('blur', function () {
-                var $this = $(this);
-                setTimeout(function () {
-                    var $field = $this.parents('.field'),
-                        val = $this.val(),
-                        plh = $this.attr('data-placeholder');
-
-                    if (!val || val == plh) {
-                        $field.removeClass('error success').addClass('empty');
-
-                    } else {
-                        $field.removeClass('empty');
-                    }
-                }, 150);
-            });
-    });
 }
 
 // маска ввода
@@ -4466,8 +4335,31 @@ $(function () {
         // },
     });
 
+    // переходы к секциям
+    $('#menu').on('click', 'a', function () {
+        var sectionId = $(this).attr('data-section');
+        var $section = $('#' + sectionId);
+
+        if (!$section.length) {
+            $section = $('.footer');
+        }
+
+        // значение для скролла
+        var scrollTop = +$section.offset().top;
+
+        // время анимации
+        var time = scrollTop / 3;
+        if (time < 200) time = 200;
+
+        $('html, body').animate({
+            scrollTop: scrollTop
+        }, time);
+
+        return false;
+    });
+
     $(window).on('resize', function () {
-        resizeModal();
+        fullscreenSlider();
     });
 
     // основной слайдер на главной
@@ -4475,8 +4367,19 @@ $(function () {
         initMainSlider();
     }
 
-    // форма обратной связи
-    initFeedbackForm();
+    $('body').on('click', '.show-form', function() {
+        $('body').css({'overflow':'hidden'});
+        $('.feedback-modal').fadeIn();
+
+        return false;
+    });
+
+    $('.call-box').on('click', '.exit', function() {
+        $('.feedback-modal').fadeOut();
+        $('body').css({'overflow':'visible'});
+        return false;
+    });
+
 
     // скрываем прелоадер страницы
     $('#page_preloader').hide('fade', 400);
@@ -4505,51 +4408,6 @@ function refreshHeightClass() {
         } else {
             $('html').removeClass('height-small');
         }
-    }
-}
-
-function initFeedbackForm() {
-    var $form = $('#support_form'),
-        $feedbackType = $form.find('#feedback_type'),
-        $feedbackQuestionType = $('#feedback_question_type'),
-        $feedbackThemeField = $form.find('#feedback_theme_field'),
-        $feedbackFileList = $form.find('#feedback_file_list'),
-        $supportSuccess = $('#support_success');
-
-    $feedbackType.on('change', function () {
-        if ($(this).val() === '5') {
-            $feedbackThemeField.removeClass('hide');
-
-        } else {
-            $feedbackThemeField.addClass('hide');
-            $feedbackQuestionType.val('').trigger('refresh').trigger('blur');
-        }
-    });
-
-    // отслеживаем изменения в валидируемых полях
-    $form.on('change', 'input, select, textarea', function () {
-        validateField($(this));
-    });
-
-}
-
-//ф-я центрирования контента модального окна
-function resizeModal() {
-    if ($('.modal-window:visible').length) {
-        var viewportHeight = +$(window).height(),
-            $modal = $('.modal-window:visible'),
-            $modalContent = $modal.find('.modal-content'),
-            modalHeight = $modalContent.height() * 1 + 60;
-
-        var marginModal = 30;
-        var diff = viewportHeight - modalHeight;
-        if (diff > 60) {
-            marginModal = diff / 2;
-        }
-
-        $modalContent.css({
-            'marginTop': marginModal
-        });
     }
 }
 
@@ -4585,6 +4443,68 @@ function fullscreenSlider() {
     var height = viewportHeight;
 
     $('.main-slider .slide').css('height', height);
+}
+
+
+if ($('#callback').length) {
+
+    var $this = $('.input-field');
+
+    function initCallbackForm() {
+        var $form = $('#callback');
+        var url = $form.attr('action');
+        var data = $form.serialize();
+
+        $form.on('change', '.validate', function() {
+            validateField($(this));
+        });
+
+        var $success = $form.find('.success-form');
+
+        $('#callback button').on('click', function() {
+            if (validateForm($form)) {
+                var phone = $('#callback').find('input[name="phone"]').val();
+                $.ajax({
+                    url: '/form.php',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {
+                        phone: phone
+                    },
+                    timeout: 60000,
+                    success: function(res) {
+                        successForm();
+                    },
+                    error: function() {
+
+                        setTimeout(function() {
+                            successForm();
+                            clearForm($form);
+
+                            $('.placeholder').removeClass('focus');
+                        }, 1000);
+                    }
+                });
+            }
+            return false;
+        });
+
+        function successForm() {
+            $success.fadeIn('fast');
+
+            setTimeout(function() {
+                clearForm($form);
+
+                $('.placeholder').removeClass('focus');
+
+                // $success.fadeOut('fast');
+                // $('.feedback-modal').fadeOut('fast');
+            }, 3000);
+        }
+
+    }
+    initCallbackForm();
+
 }
 
 //# sourceMappingURL=script.js.map

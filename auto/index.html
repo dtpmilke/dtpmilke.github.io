@@ -21,12 +21,12 @@
 <div class="header hide-mobile">
     <div class="container">
         <div class="menu-wrapper">
-            <div class="menu">
-                <a class="menu-link" href="#">о нас</a>
-                <a class="menu-link" href="#">портфолио</a>
-                <a class="menu-link" href="#">услуги</a>
-                <a class="menu-link" href="#">заявка</a>
-                <a class="menu-link" href="">контакты</a>
+            <div class="menu" id="menu">
+                <a class="menu-link" href="#" data-section="about">о нас</a>
+                <a class="menu-link" href="#" data-section="portfolio">портфолио</a>
+                <a class="menu-link" href="#" data-section="services">услуги</a>
+                <a class="menu-link" href="#" data-section="form">заявка</a>
+                <a class="menu-link" href="#" data-section="contacts">контакты</a>
             </div>
             <div class="socials">
                 <a class="item youtube" href="#"></a>
@@ -98,7 +98,7 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="about">
         <div class="container">
             <h2>Об агентстве</h2>
             <div class="description">Наша работа - реализация идей <br> любой сложности и масштаба!</div>
@@ -128,7 +128,7 @@
 
     </div>
 
-    <div class="section services p-b-0 p-t-0">
+    <div class="section services p-b-0 p-t-0" id="services">
         <div class="container-fluid">
             <h2>Наши услуги</h2>
             <div class="services-wrapper">
@@ -150,7 +150,7 @@
                                     <p>- Площадные мероприятия</p>
                                 </div>
                             </div>
-                            <div class="button">оставить заявку</div>
+                            <div class="button show-form">оставить заявку</div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6">
@@ -169,7 +169,7 @@
                                     <p>- СМИ</p>
                                 </div>
                             </div>
-                            <div class="button">оставить заявку</div>
+                            <div class="button show-form">оставить заявку</div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6">
@@ -187,7 +187,7 @@
                                     <p>- SEO</p>
                                 </div>
                             </div>
-                            <div class="button">оставить заявку</div>
+                            <div class="button show-form">оставить заявку</div>
                         </div>
                     </div>
                 </div>
@@ -210,7 +210,7 @@
                                     <p>- Корпоративные мероприятия для детей сотрудников и клиентов</p>
                                 </div>
                             </div>
-                            <div class="button">оставить заявку</div>
+                            <div class="button show-form">оставить заявку</div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6">
@@ -226,7 +226,7 @@
                                     <p>- Визуализация выставочного пространства</p>
                                 </div>
                             </div>
-                            <div class="button">оставить заявку</div>
+                            <div class="button show-form">оставить заявку</div>
                         </div>
                     </div>
                 </div>
@@ -335,9 +335,32 @@
 
     <div class="footer-margin"></div>
 </div>
-
-
 <!-- footer -->
+<div class="feedback-modal">
+    <div class="call-box">
+        <div class="exit"><i class="icon icon-cancel"></i></div>
+        <div class="modal-mail-title">Остался один шаг</div>
+        <div class="modal-mail-desc">Специалист свяжется с вами в ближайшее время</div>
+        <form action="form.php" class="room-form" id="callback" method="POST">
+            <div class="field">
+                <input type="tel" name="phone" class="input-text input-mask validate placeholder" data-mask_tpl="phone_plus7" data-placeholder="Ваш номер телефона" data-validate="mobile_phone"  method="POST">
+            </div>
+                <button type="submit" class="button">Отправить</button>
+                <div class="modal-mail-desc small">Нажимая кнопку вы даете согласие на обработку персональных
+                    данных и принимаете условия пользоваельского соглашения</div>
+            </div>
+            <div class="success-form">
+                <div class="table-block">
+                    <div class="cell">
+                        <div class="modal-mail-title">Отлично!</div>
+                        <div class="modal-mail-desc">Специалист свяжется с вами в ближайшее время</div>
+                        <button class="button close">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 <div class="footer"></div>
 <script src="./js/script.js"></script>
 
